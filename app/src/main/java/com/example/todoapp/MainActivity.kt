@@ -18,12 +18,19 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         val todoViewModel = ViewModelProvider(this)[TodoViewModel::class.java]
         setContent {
+
+//            val navController = remenberNavController()
+//            NavHost(navController = navController,startDescription = "LoginScreen.kt",builder = {
+//                composable("LoginScreen){
+//
+//                }
+//            })
             TodoAppTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                   TodoListPage()
+//                   TodoListPage()
                 }
             }
         }
